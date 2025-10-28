@@ -13,7 +13,7 @@ public class TestSelenium15_OptionClasses {
         chromeOptions.addArguments("--headless"); // Headless means running in the backend but you will not see the browser
         //chromeOptions.addArguments("--window-size=800,600")
         //chromeOptions.addArguments("--start-maximized")
-        //chromeOptions.addArguments("--incognito");
+        //chromeOptions.addArguments("--incognito"); // this is used when you don't want to store browser history
 
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("https://app.vwo.com");
