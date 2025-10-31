@@ -31,6 +31,6 @@ public class TestSelenium_ProjectNo1 {
             Assert.fail();
         }
 
-
+          driver.quit();
     }
 }
