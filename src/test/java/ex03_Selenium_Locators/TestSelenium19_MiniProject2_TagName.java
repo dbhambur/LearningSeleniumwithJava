@@ -1,5 +1,6 @@
 package ex03_Selenium_Locators;
 
+import io.qameta.allure.Description;
 import io.qameta.allure.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,9 +11,9 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
 
-public class TestSelenium19_Mini_Project2_TagName {
+public class TestSelenium19_MiniProject2_TagName {
     @Owner("Devendra")
-    //@TmsLink("https://bugz.atlassian.net/browse/BUG-17")
+    @TmsLink("https://bugz.atlassian.net/browse/BUG-17")
     @Description("Verify that the error message comes with invalid email on signup")
     @Test
     public void vwo_free_trial_error_verify(){
@@ -37,7 +38,7 @@ public class TestSelenium19_Mini_Project2_TagName {
         button.click();
 
         WebElement error_msg = driver.findElement(By.className("invalid-reason"));
-        Assert.assertEquals(error_msg.getText(),"The email address you entered is incorrect");
+        Assert.assertEquals(error_msg.getText(),"The email address you entered is incorrect.");
 
         try {
             Thread.sleep(5000);
