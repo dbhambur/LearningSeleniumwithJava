@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Test_Selenium_01 {
+public class TestSelenium_21 {
 
     @Test(groups = "QA")
     @Description("Test case Description")
